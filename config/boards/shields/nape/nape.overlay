@@ -75,6 +75,18 @@
 
 &xiao_serial { status = "disabled"; };
 
+/ {
+    aliases {
+        led-red = &led0;
+        led-green = &led1;
+        led-blue = &led2;
+    };
+
+    leds {
+        status = "okay";
+    };
+};
+
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
